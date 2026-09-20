@@ -6,3 +6,7 @@
 #factorial-result[b-ej8mnjkdf7] {
     font-size: 32px;
 }
+
+input [type='number'] .form-control[b-ej8mnjkdf7] {
+    width: 128px;
+}
