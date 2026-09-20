@@ -85,6 +85,6 @@
 /Users/dmitriy/Projects/BlazorApp1/BlazorApp1/bin/Debug/net10.0/Microsoft.AspNetCore.Razor.Language.dll
 /Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/BlazorApp1.csproj.Up2Date
 /Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/scopedcss/Components/Pages/Factorial.razor.rz.scp.css
-/Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/compressed/fe95vulehx-{0}-e4jftmkw71-e4jftmkw71.gz
-/Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/compressed/e76fe7a2nx-{0}-e4jftmkw71-e4jftmkw71.gz
 /Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/BlazorApp1.sourcelink.json
+/Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/compressed/fe95vulehx-{0}-qx4cws7m0n-qx4cws7m0n.gz
+/Users/dmitriy/Projects/BlazorApp1/BlazorApp1/obj/Debug/net10.0/compressed/e76fe7a2nx-{0}-qx4cws7m0n-qx4cws7m0n.gz

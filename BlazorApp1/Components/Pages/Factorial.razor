@@ -1,6 +1,6 @@
 @page "/Factorial"
 @rendermode InteractiveServer
-@using System.Numerics;
+
 <h3>factorial</h3>
 
 <div class="factorial">
@@ -12,16 +12,3 @@
     <div id="factorial-result">@number != @factorial</div>
 </div>
 
-@code {
-    int number = 0;
-    int factorial = 1;
-
-    void Calculate()
-    {
-        factorial = 1;
-        for (int i = 1; i <= number; i++)
-        {
-            factorial *= i;
-        }
-    }
-}

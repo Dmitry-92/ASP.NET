@@ -362,9 +362,10 @@ main[b-nz1yiwl0um] {
     }
 }
 /* /Components/Pages/Factorial.razor.rz.scp.css */
-.factorial[b-ej8mnjkdf7] {
+.factorial[b-ej8mnjkdf7], .factorial > div[b-ej8mnjkdf7]  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #factorial-result[b-ej8mnjkdf7] {
     font-size: 32px;
