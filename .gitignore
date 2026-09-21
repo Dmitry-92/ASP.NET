@@ -1,0 +1,15 @@
+# Build results
+bin/
+obj/
+
+# IDE
+.idea/
+.vs/
+.vscode/
+
+# macOS
+.DS_Store
+
+# User-specific
+*.user
+*.suo
