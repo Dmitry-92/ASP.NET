@@ -5,6 +5,15 @@
 
 <div class="power">
     <div>
-        <laber for=""
+        <label for="base">Число:</label>
+        <input type="number" id="base" @bind="baseNumber" />
     </div>
+    <div>
+        <label for="exponent">Степень:</label>
+        <input type="number" id="exponent" @bind="exponent" />
+    </div>
+    <div>
+        <button @onclick="Calculate">Возвести в степень</button>
+    </div>
+    <div id="power-result">@baseNumber ^ @exponent = @result</div>
 </div>
