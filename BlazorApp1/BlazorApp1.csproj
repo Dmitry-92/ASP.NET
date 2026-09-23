@@ -11,4 +11,8 @@
       <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="6.0.36" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Converter\Converter.csproj" />
+    </ItemGroup>
+
 </Project>

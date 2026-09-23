@@ -1,0 +1,28 @@
+<h3>Decimal → Binary</h3>
+
+<div class="dec2bin">
+    <div>
+        <label for="dec-input">Десятичное число:</label>
+        <input type="number" id="dec-input" @bind="decimalNumber" />
+    </div>
+    <div>
+        <button @onclick="Convert">Перевести</button>
+    </div>
+    <div class="converter-result">Результат: @binaryResult</div>
+</div>
+
+@code {
+    private long decimalNumber = 0;
+    private string binaryResult = "";
+
+    private void Convert()
+    {
+        if (decimalNumber < 0)
+        {
+            binaryResult = "Число должно быть неотрицательным";
+            return;
+        }
+
+        binaryResult = System.Convert.ToString(decimalNumber, 2);
+    }
+}
