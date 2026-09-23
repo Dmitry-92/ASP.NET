@@ -1,0 +1,13 @@
+@page "/Fibonacci"
+@rendermode InteractiveServer
+
+<h3>Fibonacci</h3>
+
+<div class="fibonacci">
+    <label for="limit">Предел:</label>
+    <input type="number" id="limit" @bind="limit">
+</div>
+<div>
+    <button @onclick="Calculate">Вычислить</button>
+</div>
+<div id="fibonacci-result">@result</div>
