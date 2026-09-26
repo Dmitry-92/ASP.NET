@@ -1,0 +1,35 @@
+<h3>Hex → Decimal</h3>
+
+<div class="hex2dec">
+    <div>
+        <label for="hex-input">Шестнадцатеричное число:</label>
+        <input type="text" id="hex-input" @bind="hexInput" />
+    </div>
+    <div>
+        <button @onclick="Convert">Перевести</button>
+    </div>
+    <div class="converter-result">Результат: @decimalResult</div>
+</div>
+
+@code {
+    private string hexInput = "";
+    private string decimalResult = "";
+
+    private void Convert()
+    {
+        if (string.IsNullOrWhiteSpace(hexInput))
+        {
+            decimalResult = "Введите число";
+            return;
+        }
+
+        try
+        {
+            decimalResult = System.Convert.ToInt64(hexInput, 16).ToString();
+        }
+        catch
+        {
+            decimalResult = "Некорректное шестнадцатеричное число";
+        }
+    }
+}
