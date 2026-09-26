@@ -1,0 +1,28 @@
+<h3>Decimal → Hex</h3>
+
+<div class="dec2hex">
+    <div>
+        <label for="dec-hex-input">Десятичное число:</label>
+        <input type="number" id="dec-hex-input" @bind="decimalNumber"/>
+    </div>
+    <div>
+        <button @onclick="Convert">Перевести</button>
+    </div>
+    <div class="converter-result">Результат: @hexResult</div>
+</div>
+
+@code {
+    private long decimalNumber = 0;
+    private string hexResult = "";
+
+    private void Convert()
+    {
+        if (decimalNumber < 0)
+        {
+            hexResult = "Число должно быть неотрицательным";
+            return;
+        }
+
+        hexResult = System.Convert.ToString(decimalNumber, 16).ToUpper();
+    }
+}
