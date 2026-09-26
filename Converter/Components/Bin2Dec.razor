@@ -1,0 +1,36 @@
+@using System.Linq.Expressions
+<h3>Binary → Decimal</h3>
+
+<div class="bin2dec">
+    <div>
+        <label for="bin-input">Двоичное число:</label>
+        <input type="text" id="bin-input" @bind="binaryInput"/>
+    </div>
+    <div>
+        <button @onclick="Convert">Перевести</button>
+    </div>
+    <div class="converter-result">Результат: @decimalResult</div>
+</div>
+
+@code {
+    private string binaryInput = "";
+    private string decimalResult = "";
+
+    private void Convert()
+    {
+        if (string.IsNullOrWhiteSpace(binaryInput))
+        {
+            decimalResult = "Введите число ";
+            return;
+        }
+
+        try
+        {
+            decimalResult = System.Convert.ToInt64(binaryInput, 2).ToString();
+        }
+        catch
+        {
+            decimalResult = "Некорректное двоичное число";
+        }
+    }
+}
