@@ -13,3 +13,11 @@ input[type="checkbox"]:checked + label
     display: flex;
     justify-content: space-between;
 }
+
+.task-time
+{
+    color: gray;
+    font-size: 12px;
+    margin-left: 12px;
+    font-style: italic;
+}
