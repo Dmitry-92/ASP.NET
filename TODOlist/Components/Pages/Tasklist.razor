@@ -23,6 +23,7 @@
             <input type="checkbox" id="@task.Description" @bind="task.DONE"/>
             <label for="@task.Description">@task.Description</label>
             <span class="task-time">@task.CreatedAt.ToString("dd.MM.yyyy HH:mm:ss")</span>
+            <button class="btn btn-danger btn-sm" @onclick="() => RemoveTask(task)">Удалить</button>
         </li>
     }
 </ul>
@@ -43,5 +44,9 @@
         if (tasklist.Contains(new TODO { Description = description})) return;
         tasklist.Add(new TODO { Description = description });
         description = "";
+    }
+    void RemoveTask(TODO task)
+    {
+        tasklist.Remove(task);
     }
 }
