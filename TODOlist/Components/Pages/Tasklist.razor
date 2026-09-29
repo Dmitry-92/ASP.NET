@@ -16,6 +16,10 @@
 </div>
 <hr/>
 
+<div class="actions">
+    <button class="btn btn-danger" @onclick="RemoveCompleted">Удалить выполненные</button>
+</div>
+
 <ul>
     @foreach (TODO task in tasklist)
     {
@@ -48,5 +52,9 @@
     void RemoveTask(TODO task)
     {
         tasklist.Remove(task);
+    }
+    void RemoveCompleted()
+    {
+        tasklist.RemoveAll(t => t.DONE);
     }
 }
