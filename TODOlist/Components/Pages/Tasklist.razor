@@ -18,6 +18,7 @@
 
 <div class="actions">
     <button class="btn btn-danger" @onclick="RemoveCompleted">Удалить выполненные</button>
+    <button class="btn btn-danger" @onclick="ClearAll">Очистить</button>
 </div>
 
 <ul>
@@ -56,5 +57,10 @@
     void RemoveCompleted()
     {
         tasklist.RemoveAll(t => t.DONE);
+    }
+
+    void ClearAll()
+    {
+        tasklist.Clear();
     }
 }
